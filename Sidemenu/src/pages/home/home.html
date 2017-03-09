@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>home page</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <h3>home 内容区</h3>
+
+    <button ion-button (click)="click1()">get</button>
+    <button ion-button (click)="click2()">set</button>
+    <button ion-button (click)="click3()">Remove</button>
+
+    <button ion-button (click)="Map()">Map</button>
+    <br/>
+    <button ion-button (click)="GetData()">getData</button>
+    <button ion-button (click)="GetLocation()">GetLocation</button>
+    <br/>
+    <br/>
+    <button ion-button (click)="presentActionSheet()">ActionSheet</button>
+    <button ion-button (click)="showBaseAlert()">Alert</button>
+        
+  
+
+    <div #container id="containerh" style="width: 100%;height: 100%;"></div>
+</ion-content>

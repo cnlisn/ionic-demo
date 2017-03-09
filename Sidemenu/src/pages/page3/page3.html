@@ -1,0 +1,8 @@
+
+<ion-tabs [selectedIndex]="mySelectedIndex">
+        <!--<ion-tab tabTitle="Home" tabIcon="home"  [root]="pageHome"></ion-tab>-->
+        <ion-tab tabTitle="{{R_MobileLaw.String.MobileLaw.Main.Home.text}}" tabIcon="{{R_MobileLaw.String.MobileLaw.Main.Home.icon}}"  [root]="pageHome"></ion-tab>
+        <ion-tab tabTitle="{{R_MobileLaw.String.MobileLaw.Main.Todo.text}}" tabIcon="{{R_MobileLaw.String.MobileLaw.Main.Todo.icon}}" [root]="pageTodo"></ion-tab>
+        <ion-tab tabTitle="{{R_MobileLaw.String.MobileLaw.Main.Warning.text}}" tabIcon="{{R_MobileLaw.String.MobileLaw.Main.Warning.icon}}" [root]="pageWarning"></ion-tab>
+        <ion-tab tabTitle="{{R_MobileLaw.String.MobileLaw.Main.User.text}}" tabIcon="{{R_MobileLaw.String.MobileLaw.Main.User.icon}}" [root]="pageUser"></ion-tab>
+</ion-tabs>
