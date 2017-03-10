@@ -23,6 +23,10 @@ import {datetime_page}from '../pages/demo/datetime/datetime_page';
 import {fab_page}from '../pages/demo/fab/fab_page';
 import {hide_when_page}from '../pages/demo/hide-when/hide_when_page';
 import {icon_page}from '../pages/demo/icon/icon_page';
+import {infinite_scroll}from '../pages/demo/infinite-scroll/infinite_scroll';
+import {MockProvider}from '../pages/demo/infinite-scroll/infinite_scroll';
+import {input_page}from '../pages/demo/input/input_page';
+
 
 
 
@@ -51,7 +55,9 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     datetime_page,
     fab_page,
     hide_when_page,
-    icon_page
+    icon_page,
+    infinite_scroll,
+    input_page
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -77,14 +83,16 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     datetime_page,
     fab_page,
     hide_when_page,
-    icon_page
+    icon_page,
+    infinite_scroll,
+    input_page
   ],
   providers: [
       {
         provide: [
           ErrorHandler
         ], useClass: IonicErrorHandler
-      },Storage,StorageHelper
+      },Storage,StorageHelper,MockProvider
     ]
 })
 export class AppModule {}

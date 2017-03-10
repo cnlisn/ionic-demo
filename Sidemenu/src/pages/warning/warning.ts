@@ -9,6 +9,8 @@ import {datetime_page}from '../demo/datetime/datetime_page';
 import {fab_page}from '../demo/fab/fab_page';
 import {hide_when_page}from '../demo/hide-when/hide_when_page';
 import {icon_page}from '../demo/icon/icon_page';
+import {infinite_scroll}from '../demo/infinite-scroll/infinite_scroll';
+import {input_page}from '../demo/input/input_page';
 
 
 @Component({
@@ -53,5 +55,13 @@ export class Page_warning{
 
     icon_page(){
         this.nav.push(icon_page);
+    }
+
+    infinite_scroll(){
+        this.nav.push(infinite_scroll);
+    }
+
+    input_page(){
+        this.nav.push(input_page);
     }
 }
