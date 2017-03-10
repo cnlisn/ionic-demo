@@ -8,6 +8,7 @@ import {chip_page}from '../demo/chip/chip_page';
 import {datetime_page}from '../demo/datetime/datetime_page';
 import {fab_page}from '../demo/fab/fab_page';
 import {hide_when_page}from '../demo/hide-when/hide_when_page';
+import {icon_page}from '../demo/icon/icon_page';
 
 
 @Component({
@@ -48,5 +49,9 @@ export class Page_warning{
 
     hide_when_page(){
         this.nav.push(hide_when_page);
+    }
+
+    icon_page(){
+        this.nav.push(icon_page);
     }
 }

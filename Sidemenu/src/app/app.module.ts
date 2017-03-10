@@ -22,6 +22,7 @@ import {chip_page}from '../pages/demo/chip/chip_page';
 import {datetime_page}from '../pages/demo/datetime/datetime_page';
 import {fab_page}from '../pages/demo/fab/fab_page';
 import {hide_when_page}from '../pages/demo/hide-when/hide_when_page';
+import {icon_page}from '../pages/demo/icon/icon_page';
 
 
 
@@ -49,7 +50,8 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     chip_page,
     datetime_page,
     fab_page,
-    hide_when_page
+    hide_when_page,
+    icon_page
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -74,7 +76,8 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     chip_page,
     datetime_page,
     fab_page,
-    hide_when_page
+    hide_when_page,
+    icon_page
   ],
   providers: [
       {
