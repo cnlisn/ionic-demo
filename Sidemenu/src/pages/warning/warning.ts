@@ -11,6 +11,7 @@ import {hide_when_page}from '../demo/hide-when/hide_when_page';
 import {icon_page}from '../demo/icon/icon_page';
 import {infinite_scroll}from '../demo/infinite-scroll/infinite_scroll';
 import {input_page}from '../demo/input/input_page';
+import {testPlugin}from '../demo/testPlugin/testPlugin';
 
 
 @Component({
@@ -63,5 +64,9 @@ export class Page_warning{
 
     input_page(){
         this.nav.push(input_page);
+    }
+
+    testPlugin(){
+        this.nav.push(testPlugin);
     }
 }

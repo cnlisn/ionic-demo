@@ -26,6 +26,9 @@ import {icon_page}from '../pages/demo/icon/icon_page';
 import {infinite_scroll}from '../pages/demo/infinite-scroll/infinite_scroll';
 import {MockProvider}from '../pages/demo/infinite-scroll/infinite_scroll';
 import {input_page}from '../pages/demo/input/input_page';
+import {testPlugin}from '../pages/demo/testPlugin/testPlugin';
+
+
 
 
 
@@ -57,7 +60,8 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     hide_when_page,
     icon_page,
     infinite_scroll,
-    input_page
+    input_page,
+    testPlugin
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -85,7 +89,8 @@ import {StorageHelper} from '../providers/db/StorageHelper';
     hide_when_page,
     icon_page,
     infinite_scroll,
-    input_page
+    input_page,
+    testPlugin
   ],
   providers: [
       {

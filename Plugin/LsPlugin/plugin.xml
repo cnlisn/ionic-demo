@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.lishan.helloworld" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--插件名-->
+    <name>LsPlugin</name>
+    <!--js模块名-->
+    <js-module name="LsPlugin" src="www/LsPlugin.js">
+        <!--安装后js调用名-->
+        <clobbers target="cordova.plugins.LsPlugin" />
+    </js-module>
+
+    <!--Android-->
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="LsPlugin">
+                <param name="android-package" value="com.lishan.helloworld.LsPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <!--Cordova >=3.0.0-->
+        <source-file src="src/android/LsPlugin.java" target-dir="src/com/lishan/helloworld/LsPlugin" />
+    </platform>
+</plugin>
